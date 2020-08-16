@@ -71,7 +71,7 @@ def encode(in_file, out_file, name=None, mode=None):
     if name is None:
         name = '-'
     if mode is None:
-        mode = 0666
+        mode = 0o666
     #
     # Write the data
     #

@@ -286,7 +286,7 @@ Koi8rModel = { \
   'charToOrderMap': KOI8R_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "KOI8-R"
 }
 
@@ -294,7 +294,7 @@ Win1251CyrillicModel = { \
   'charToOrderMap': win1251_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "windows-1251"
 }
 
@@ -302,7 +302,7 @@ Latin5CyrillicModel = { \
   'charToOrderMap': latin5_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "ISO-8859-5"
 }
 
@@ -310,7 +310,7 @@ MacCyrillicModel = { \
   'charToOrderMap': macCyrillic_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "MacCyrillic"
 };
 
@@ -318,7 +318,7 @@ Ibm866Model = { \
   'charToOrderMap': IBM866_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "IBM866"
 }
 
@@ -326,6 +326,6 @@ Ibm855Model = { \
   'charToOrderMap': IBM855_CharToOrderMap,
   'precedenceMatrix': RussianLangModel,
   'mTypicalPositiveRatio': 0.976601,
-  'keepEnglishLetter': constants.False,
+  'keepEnglishLetter': False,
   'charsetName': "IBM855"
 }

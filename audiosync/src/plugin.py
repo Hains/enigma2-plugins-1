@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # for localized messages
-from . import _
+from Plugins.Extensions.AudioSync.__init__ import _
 
 from Components.config import config, ConfigSubsection, ConfigInteger, ConfigSubList
 from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
-import AC3main
-import AC3setup
+from Plugins.Extensions.AudioSync import AC3main
+from Plugins.Extensions.AudioSync import AC3setup
 
 config.plugins.AC3LipSync = ConfigSubsection()
 config.plugins.AC3LipSync.outerBounds = ConfigInteger(default = 1000, limits = (-10000,10000))

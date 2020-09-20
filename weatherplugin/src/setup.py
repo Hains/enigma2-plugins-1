@@ -182,7 +182,7 @@ class WeatherPluginEntryList(MenuList):
 			if skinwidth == 1280:
 				x1, y1, w1, h1 = skinparameter.get("WeatherPluginCity", (5, 0, 400, 20))
 				x2, y2, w2, h2 = skinparameter.get("WeatherPluginDegreetype", (410, 0, 80, 20))
-		    	else:
+			else:
 				x1, y1, w1, h1 = skinparameter.get("WeatherPluginCity", (5, 0, 400, 32))
 				x2, y2, w2, h2 = skinparameter.get("WeatherPluginDegreetype", (410, 0, 80, 32))
 			res = [
@@ -197,7 +197,7 @@ class WeatherPluginEntryList(MenuList):
 
 class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 	if skinwidth == 1280:
-	   skin = """
+		skin = """
 		<screen name="MSNWeatherPluginEntryConfigScreen" position="center,center" size="550,400">
 			<widget name="config" position="20,60" size="520,300" scrollbarMode="showOnDemand" />
 			<ePixmap position="0,10" zPosition="4" size="140,40" pixmap="buttons/red.png" transparent="1" alphatest="on" />
@@ -210,7 +210,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			<widget source="key_blue" render="Label" position="420,10" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		</screen>"""
 	else:
-	   skin = """
+		skin = """
 		<screen name="MSNWeatherPluginEntryConfigScreen" position="center,center" size="811,534">
 			<widget name="config" position="8,75" size="794,450" scrollbarMode="showOnDemand"/>
 			<ePixmap position="30,10" zPosition="4" size="140,40" pixmap="buttons/red.png" transparent="1" alphatest="on"/>

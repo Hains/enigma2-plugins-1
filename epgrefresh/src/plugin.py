@@ -23,11 +23,11 @@ from sys import stdout
 from time import time, localtime, mktime
 now = localtime()
 begin = mktime((
-	now.tm_year, now.tm_mon, now.tm_mday, 07, 30, \
+	now.tm_year, now.tm_mon, now.tm_mday, 7, 30, \
 	0, now.tm_wday, now.tm_yday, now.tm_isdst)
 )
 end = mktime((
-	now.tm_year, now.tm_mon, now.tm_mday, 20, 00, \
+	now.tm_year, now.tm_mon, now.tm_mday, 20, 0, \
 	0, now.tm_wday, now.tm_yday, now.tm_isdst)
 )
 

@@ -228,7 +228,7 @@ class SystemTimeSetupScreen(Screen, ConfigListScreen):
 			else:
 				Console().ePopen(cmd)
 				if fileExists("/etc/init.d/ntpdate"):
-					os.chmod("/etc/init.d/ntpdate", 0755)
+					os.chmod("/etc/init.d/ntpdate", 0o755)
 					Console().ePopen("update-rc.d ntpdate defaults 99")
 				else:
 					self.ST.syncNTPcoldstart.value = False
@@ -243,7 +243,7 @@ class SystemTimeSetupScreen(Screen, ConfigListScreen):
 
 	def addUseRTC(self):
 		if fileExists("/etc/init.d/set-rtctime"):
-			os.chmod("/etc/init.d/set-rtctime", 0755)
+			os.chmod("/etc/init.d/set-rtctime", 0o755)
 			Console().ePopen("update-rc.d set-rtctime defaults 40")
 		else:
 			Console().ePopen("cp %s /etc/init.d/set-rtctime") % resolveFilename(SCOPE_PLUGINS, "SystemPlugins/SystemTime/set-rtctime")

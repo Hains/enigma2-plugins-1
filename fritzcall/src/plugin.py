@@ -3139,6 +3139,7 @@ def registerUserAction(fun):
 
 mutedOnConnID = None
 def notifyCall(event, date, number, caller, phone, connID): # @UnusedVariable # pylint: disable=W0613
+	global standbyMode
 	if Standby.inStandby is None or config.plugins.FritzCall.afterStandby.value == "each":
 		if event == "RING":
 			text = _("Incoming Call on %(date)s at %(time)s from\n---------------------------------------------\n%(number)s\n%(caller)s\n---------------------------------------------\nto: %(phone)s") % {'date':date[:8], 'time':date[9:], 'number':number, 'caller':caller, 'phone':phone}
@@ -3151,7 +3152,6 @@ def notifyCall(event, date, number, caller, phone, connID): # @UnusedVariable # 
 		#
 		# if not yet done, register function to show call list
 		if not standbyMode:
-			global standbyMode
 			standbyMode = True
 			Standby.inStandby.onHide.append(callList.display)  # @UndefinedVariable
 		# add text/timeout to call list

@@ -35,6 +35,7 @@ def bareGetEpisode(service_ref, name, begin, end, description, path, future=True
 		)
 		
 		global loop_counter
+		global loop_data
 		loop_counter += 1
 		
 		if data and isinstance(data, dict):
@@ -45,13 +46,11 @@ def bareGetEpisode(service_ref, name, begin, end, description, path, future=True
 			return (name, description, path, log.get())
 		
 		elif data and isinstance(data, basestring):
-			global loop_data
 			msg = _("Failed: %s." % ( str( data ) ))
 			log.debug(msg)
 			loop_data.append( name + ": " + msg )
 		
 		else:
-			global loop_data
 			msg = _("No data available")
 			log.debug(msg)
 			loop_data.append( name + ": " + msg )

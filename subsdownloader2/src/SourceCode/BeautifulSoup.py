@@ -1824,7 +1824,7 @@ class UnicodeDammit:
                                                       "iso-8859-1",
                                                       "iso-8859-2"):
             markup = re.compile("([\x80-\x9f])").sub \
-                     (lambda(x): self._subMSChar(x.group(1)),
+                     (lambda x: self._subMSChar(x.group(1)),
                       markup)
 
         try:

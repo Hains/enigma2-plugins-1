@@ -1906,7 +1906,7 @@ class DccFileReceive(DccFileReceiveBasic):
 
 # CTCP constants and helper functions
 
-X_DELIM = chr(001)
+X_DELIM = chr(1)
 
 def ctcpExtract(message):
     """Extract CTCP data from a string.

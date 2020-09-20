@@ -55,10 +55,10 @@ import socket
 from os import path
 
 NUL = chr(0)
-CR = chr(015)
-NL = chr(012)
+CR = chr(15)
+NL = chr(12)
 LF = NL
-SPC = chr(040)
+SPC = chr(40)
 
 CHANNEL_PREFIXES = '&#!+'
 

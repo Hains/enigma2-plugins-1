@@ -1951,7 +1951,7 @@ def ctcpExtract(message):
 
 # CTCP escaping
 
-M_QUOTE= chr(020)
+M_QUOTE= chr(20)
 
 mQuoteTable = {
     NUL: M_QUOTE + '0',

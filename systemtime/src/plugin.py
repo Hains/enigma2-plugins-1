@@ -248,7 +248,7 @@ class SystemTimeSetupScreen(Screen, ConfigListScreen):
 		else:
 			Console().ePopen("cp %s /etc/init.d/set-rtctime") % resolveFilename(SCOPE_PLUGINS, "SystemPlugins/SystemTime/set-rtctime")
 			if fileExists("/etc/init.d/set-rtctime"):
-				os.chmod("/etc/init.d/set-rtctime", 0755)
+				os.chmod("/etc/init.d/set-rtctime", 0o755)
 				Console().ePopen("update-rc.d set-rtctime defaults 40")
 			else:
 				self.session.open(MessageBox, _("Script 'set-rtctime' not found!"), MessageBox.TYPE_ERROR, timeout=3)
